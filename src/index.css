@@ -1,0 +1,81 @@
+/* Calculator stillari */
+
+.calculator {
+  width: 320px;
+  margin: 50px auto;
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-size: 2.2rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  min-height: 70px;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  padding: 18px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #334155;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #475569;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Maxsus tugmalar */
+.btn.operator {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.btn.operator:hover {
+  background-color: #0284c7;
+}
+
+.btn.equal {
+  background-color: #22c55e;
+  color: white;
+  grid-row: span 2; /* 2 qatorni egallaydi */
+}
+
+.btn.equal:hover {
+  background-color: #16a34a;
+}
+
+.btn.clear {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn.clear:hover {
+  background-color: #dc2626;
+}
+
+.btn.zero {
+  grid-column: span 2; /* 0 tugmasi 2 ta katakni egallaydi */
+}
